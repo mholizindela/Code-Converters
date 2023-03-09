@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="Web_Builder,_Complaint_Page.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.droplist.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#DropList1").droplist(
+   {
+
+      classes: {'ui-selectmenu-menu':'DropList1'}
+   });
+   $("#DropList2").droplist(
+   {
+      select: function(event, data)
+      {
+         var url = data.item.element.attr('value');
+         if (url && url.length != 0)
+         {
+            var target = data.item.element.attr('data-target');
+            if (target && target.length != 0)
+            {
+               window.open(url, target);
+            }
+            else
+            {
+               window.location.href=url;
+            }
+         }
+      },
+      classes: {'ui-selectmenu-menu':'DropList2'}
+   });
+   $("#DropList3").droplist(
+   {
+
+      classes: {'ui-selectmenu-menu':'DropList3'}
+   });
+});
+</script>
+</head>
+<body>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb18.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_DropList1" style="position:absolute;left:59px;top:82px;width:127px;height:40px;z-index:1;">
+<select id="DropList1">
+<option value="Steve Biko">Steve Biko</option>
+<option value="Ritson">Ritson</option>
+<option value="ML Sultan">ML Sultan</option>
+</select></div>
+<div id="wb_DropList2" style="position:absolute;left:412px;top:118px;width:127px;height:40px;z-index:2;">
+<select id="DropList2">
+<option value="Item 1">Item 1</option>
+<option value="Item 2">Item 2</option>
+<option value="Item 3">Item 3</option>
+<optgroup label="Divider">
+<option value="Item 4">Item 4</option>
+</optgroup>
+</select></div>
+<div id="wb_DropList3" style="position:absolute;left:261px;top:118px;width:127px;height:40px;z-index:3;">
+<select id="DropList3">
+<option value="Lighting">Lighting</option>
+<option value="Water Damage">Water Damage</option>
+<option value="Ventilation">Ventilation</option>
+<option value="Plug Faults">Plug Faults</option>
+<option value="Furntinure damage">Furntinure damage</option>
+<option value="Other">Other</option>
+</select></div>
+<textarea name="TextArea1" id="TextArea1" style="position:absolute;left:261px;top:205px;width:374px;height:109px;z-index:4;" rows="6" cols="44" spellcheck="false"></textarea>
+<div id="wb_TextArt1" style="position:absolute;left:261px;top:176px;width:231px;height:29px;z-index:5;">
+<img src="images/img0001.png" id="TextArt1" alt="Description of Problem " title="Description of Problem " width="231" height="29" style="width:231px;height:29px;"></div>
+<div id="wb_TextArt2" style="position:absolute;left:59px;top:246px;width:79px;height:16px;z-index:6;">
+<img src="images/img0002.png" id="TextArt2" alt="Room Code" title="Room Code" width="79" height="16" style="width:79px;height:16px;"></div>
+<div id="wb_TextArt3" style="position:absolute;left:59px;top:66px;width:79px;height:16px;z-index:7;">
+<img src="images/img0003.png" id="TextArt3" alt="Campus" title="Campus" width="79" height="16" style="width:79px;height:16px;"></div>
+<input type="text" id="Editbox1" style="position:absolute;left:59px;top:262px;width:86px;height:16px;z-index:8;" name="Editbox1" value="" spellcheck="false">
+<div id="wb_TextArt4" style="position:absolute;left:59px;top:189px;width:79px;height:16px;z-index:9;">
+<img src="images/img0004.png" id="TextArt4" alt="Block Code" title="Block Code" width="79" height="16" style="width:79px;height:16px;"></div>
+<input type="text" id="Editbox2" style="position:absolute;left:59px;top:205px;width:86px;height:16px;z-index:10;" name="Editbox1" value="" spellcheck="false">
+<div id="wb_TextArt5" style="position:absolute;left:261px;top:95px;width:79px;height:16px;z-index:11;">
+<img src="images/img0005.png" id="TextArt5" alt="Fault Type" title="Fault Type" width="79" height="16" style="width:79px;height:16px;"></div>
+<input type="submit" id="Button1" name="" value="Submit" style="position:absolute;left:261px;top:368px;width:96px;height:25px;z-index:12;">
+</body>
+</html>
