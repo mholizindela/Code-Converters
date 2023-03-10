@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;}
+    </style>
+<title>DUT Maintenance</title>
+</head>
+<body>
+
+<h1 style="font-family: Calibri;">Welcome to the DUT Maintenance Website.</h1>
+<p style="font-size: large;"
+style="font-family: Calibri;"><br><br><br><br>
+
+<br><br>
+<h2>DASHBOARD</h2>
+
+<p>Report</p>
+<p>Check Status</p>
+<p>Maintance List</p>
+<p>View Feedback</p>
+<p>Write Feedback</p>
+
+
+
+</p>
+
+</body>
+</html> 
